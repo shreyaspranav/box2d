@@ -1,6 +1,7 @@
 project "Box2D"
     kind "StaticLib"
     language "C++"
+    staticruntime "On"
 
     targetdir ("%{wks.location}/bin/" .. bin_folder .. "/") -- make a variable called "bin_folder" in main premake5.lua file
     objdir ("%{wks.location}/bin/" .. bin_folder .. "/obj")
