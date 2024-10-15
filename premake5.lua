@@ -1,7 +1,7 @@
 project "Box2D"
     kind "StaticLib"
     language "C++"
-    staticruntime "on"
+    staticruntime "off"
 
 	targetdir ("%{wks.location}/bin/" .. bin_folder .. "/bin/%{prj.name}")
 	objdir ("%{wks.location}/bin/" .. bin_folder .. "/obj/%{prj.name}")
